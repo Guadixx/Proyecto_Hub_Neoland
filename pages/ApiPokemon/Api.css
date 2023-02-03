@@ -1,0 +1,32 @@
+
+#app{
+    color:black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    gap:1rem;
+}
+
+.carta{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#d6d4f0bc;
+    padding: 4px;
+    border-radius: 8px;
+    margin:10px;
+    border: 6px solid whitesmoke; 
+    width: 200px;
+    height: 290px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+.carta > h2{
+   margin: 3.5px;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+}
+.carta:hover{
+    background-image:url("../../utils/assets/carta pokemon.png");
+    width:100%;
+}
