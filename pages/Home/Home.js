@@ -31,4 +31,7 @@ export const printTemplate = () => {
     document.querySelector(".juego2").addEventListener("click", () => { 
         initContent("Piedra_Papel_o_Tijera");
     })
+    // document.querySelector(".juego3").addEventListener("click", () => {
+    //     initContent("Quiz");
+    // })
 };

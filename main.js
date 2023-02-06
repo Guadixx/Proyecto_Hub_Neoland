@@ -2,7 +2,7 @@ import './style.css'
 import { printTemplate as HomeTemplate } from './pages/Home/home';
 import { printTemplate as LoginTemplate } from './pages/Login/Login';
 import { printTemplate as ApiTemplate } from './pages/ApiPokemon/Api';
-import { printTemplate as HangmanTemplate} from './pages/Hangman/Hangman';
+import { printTemplate as QuizTemplate} from './pages/Quiz/Quiz';
 import { printTemplate as PPTTemplate} from './pages/PPT/Ppt';
 
 
@@ -19,8 +19,8 @@ export const initContent = (route) => {
     case "Pokemon_Api":
       ApiTemplate();
       break;
-    case "Others":
-      HangmanTemplate();
+    case "Quiz":
+      QuizTemplate();
       break;
     case "Piedra_Papel_o_Tijera":
       PPTTemplate();

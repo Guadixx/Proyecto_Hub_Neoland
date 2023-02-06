@@ -1,0 +1,4 @@
+.juego {
+display:grid;
+grid-template-columns: repeat(auto-fit,min-max(200px ,3fr));
+}
