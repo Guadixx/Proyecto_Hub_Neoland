@@ -1,0 +1,116 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home > h2 {
+    font-size: 2rem;
+    background-color:#96b6c8;
+    padding: 8.5px;
+    font-weight: 300;
+    font-family: "Merriweather",sans-serif;
+    border-radius: 8px;
+    color:#3f656f;
+    margin-bottom: 1.5rem;
+    position: relative;
+    right:630px;
+    top:0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .home > h3 {
+    font-size: 5rem;
+    font-weight: 100; 
+    padding: 30px;
+    background-color: #E9E3E6;
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    top:3px;
+    font-family: "Merriweather",sans-serif;
+    font-weight: 4000;
+    font-size: 3.5rem;
+    color:#3f656f;
+    /*padding: 1rem;*/
+    width: 100%;
+    text-align: center;
+    /*border-radius: 12px;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+}
+.inputNombre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-transform: uppercase;
+    background-color:#3f656f;
+    color:#96b6c8;
+    padding: 1rem;
+    width: 40%;
+    height:160px;
+    margin-top: 300px;
+    margin:30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.block2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    font-size: 8px;
+    background-color: #E9E3E6;
+    color:#121629;
+    padding: 1rem;
+    width: 20%;
+    height:10px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.inputNombre > p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.inputNombre > input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #fef6e4;
+    position: relative;
+    top:6px;
+    left:8px;
+}
+.input > input:hover{
+    background-color: #ce7d0b;
+}
+.block2 > h2{
+    letter-spacing: 2.8px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,19 +1,34 @@
-import "./Home.css";
+import { initContent } from "../../main";
+import "./home.css"
+
 const template = () => `
-<section class="home">
-    <h2>Home</h2>
-    <div id="subtitulo">
-        <div class="block">
-        <h3>Hub-Games</h3>
-        </div>
+<div class="block2">
+        <h2 id="color-name">color</h2>
+    <select id="color-picker">
+          <option value="@fff">-</option>
+    </select>
+ </div>
+<div class="grid-menu">
+    <ul>
+        <li>
+            <button class="juego1">Api pokemon</button>
+        </li>
+        <li>
+            <button class="juego2">Piedra Papel o Tijera</button>
+        </li>
+    </ul>
     </div>
-    <div class="inputNombre">
-        <p>Introduce tu nombre</p>
-        <input class="name" type="text" placeholder="Ingresa tu nombre">
-        <button id="storage">></button>
-    </div>
-    </section>`;
+
+`;
+
+
 
 export const printTemplate = () => {
     document.querySelector("#app").innerHTML = template();
+    document.querySelector(".juego1").addEventListener("click", () =>{
+        initContent("Pokemon_Api");
+    })
+    document.querySelector(".juego2").addEventListener("click", () => { 
+        initContent("Piedra_Papel_o_Tijera");
+    })
 };

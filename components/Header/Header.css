@@ -13,6 +13,7 @@ header > nav {
   
   header > nav > ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 100%;
@@ -26,11 +27,12 @@ header > nav {
   }
   .block2{
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     position: relative;
     left: 560px;
-    top: 6px;
+    bottom: 105px;
     padding: 9px;
     font-size: 8px;
     background-color: #E9E3E6;

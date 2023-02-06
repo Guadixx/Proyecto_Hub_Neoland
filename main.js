@@ -1,34 +1,39 @@
 import './style.css'
-import { printTemplate as HeaderTemplate } from './components/Header/Header';
-import { printTemplate as HomeTemplate } from './pages/Home/Home';
+import { printTemplate as HomeTemplate } from './pages/Home/home';
+import { printTemplate as LoginTemplate } from './pages/Login/Login';
 import { printTemplate as ApiTemplate } from './pages/ApiPokemon/Api';
-import { printTemplate as OtherTemplate} from './pages/Other/Other';
-import { printTemplate as ContactTemplate} from './pages/Contact/Contact';
+import { printTemplate as HangmanTemplate} from './pages/Hangman/Hangman';
+import { printTemplate as PPTTemplate} from './pages/PPT/Ppt';
 
+
+
+//----SWITCH  
 export const initContent = (route) => {
   switch (route) {
-    case undefined:
-      HomeTemplate();
+     case undefined:
+         localStorage.getItem("user")? HomeTemplate() : LoginTemplate();
+       break;
+    case "Login":
+      LoginTemplate();
+      break;
+    case "Pokemon_Api":
+      ApiTemplate();
+      break;
+    case "Others":
+      HangmanTemplate();
+      break;
+    case "Piedra_Papel_o_Tijera":
+      PPTTemplate();
       break;
     case "Home":
       HomeTemplate();
       break;
-    case "Pokemon Api":
-      ApiTemplate();
-      break;
-    case "Others":
-      OtherTemplate();
-      break;
-    case "Contact Me":
-      ContactTemplate();
-      break;
   }
 };
 
-HeaderTemplate();
-
+HomeTemplate();
 initContent();
-
+//----COLOR PICKER
 const COLOR_PALETTE = {
   '#907F9F': 'Lavender',
   '#7A89C2': 'Glaucouse',
@@ -66,19 +71,24 @@ const addEventListenerToColorPicker = () => {
 addOptionsToColorPicker();
 addEventListenerToColorPicker();
 
-const storageBtn = document.querySelector("#storage");
-const nameInput = document.querySelector(".name");
-const container = document.querySelector("#app");
 
-storageBtn.addEventListener("click", () => {
-     localStorage.setItem("user", nameInput.value);
- })
-const localUser = localStorage.getItem("user");
+ //----LOCAL STORAGE PARA EL NOMBRE 
+//  const container = document.querySelector("#app");
 
-  container.innerHTML = localStorage.getItem("user")
-  ?`
-  <h2>${localUser}</h2>
-  ` 
-  : `No hay usuario`;
 
-console.log(localStorage.user);
+// const storageBtn = document.querySelector("#storage");
+// const nameInput = document.querySelector(".name");
+// const container = document.querySelector("#app");
+
+// storageBtn.addEventListener("click", () => {
+//      localStorage.setItem("user", nameInput.value);
+//  })
+// const localUser = localStorage.getItem("user");
+
+//   container.innerHTML = localStorage.getItem("user")
+//   ?`
+//   <h2>${localUser}</h2>
+//   ` 
+//   : `No hay usuario`;
+
+// console.log(localStorage.user);
