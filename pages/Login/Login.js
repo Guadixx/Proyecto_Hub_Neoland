@@ -10,7 +10,7 @@ const template = () => `
     <div class="inputNombre">
         <p>Introduce tu nombre</p>
         <input class="name" type="text" placeholder="Ingresa tu nombre">
-        <button id="storage">></button>
+        <button id="storage">go</button>
     </div>
     <div>
     <p> Bienvenido a mi sección de juegos.Puedes encontrar distintos juegos a los cuales puedes acceder desde el header. </p>
@@ -19,10 +19,10 @@ const template = () => `
 
 export const printTemplate = () => {
     const container = document.querySelector("#app");
-  container.innerHTML = template();
-  const storageBtn = document.querySelector("#storage");
-  const nameInput = document.querySelector(".name");
-  storageBtn.addEventListener("click", () => {
+    container.innerHTML = template();
+    const storageBtn = document.querySelector("#storage");
+    const nameInput = document.querySelector(".name");
+    storageBtn.addEventListener("click", () => {
     localStorage.setItem("user", nameInput.value);
   });
   const localUser = localStorage.getItem("user");

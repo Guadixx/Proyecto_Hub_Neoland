@@ -1,3 +1,10 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +52,7 @@
     /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
 }
 .inputNombre{
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -82,6 +90,7 @@
 }
 .inputNombre > p{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -92,16 +101,16 @@
 }
 .inputNombre > input{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     height: 30px;
-    width: 300px;
+    width: 70%;
     border-radius: 8px;
     background-color: #fef6e4;
     position: relative;
     top:6px;
-    left:8px;
+    right:60px;
 }
 .input > input:hover{
     background-color: #ce7d0b;
@@ -113,4 +122,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+#storage{
+    box-sizing: border-box;
+    position: relative;
+    right:120px;
+    top:46px;
+    flex-direction: column;
+    width: 10%;
+    text-transform: uppercase;
+    border: #121629 solid 1px;
+    border-radius: 4px;
 }
